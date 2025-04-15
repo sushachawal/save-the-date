@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flip Card Image Viewer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card" id="card">
+      <div class="side front">
+        <img src="save_the_date_front.png" alt="Front Image" />
+      </div>
+      <div class="side back">
+        <img src="save_the_date_back.png" alt="Back Image" />
+      </div>
+    </div>
+    <button id="flipButton" aria-label="Flip Card">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="1 4 1 10 7 10"></polyline>
+        <polyline points="23 20 23 14 17 14"></polyline>
+        <path d="M20.49 9A9 9 0 0 0 5.51 5.5"></path>
+        <path d="M3.51 15A9 9 0 0 0 18.49 18.5"></path>
+      </svg>
+    </button>
+    <button id="downloadButton" aria-label="Download Image">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 5v14"></path>
+        <path d="M5 12l7 7 7-7"></path>
+        <path d="M5 19h14"></path>
+      </svg>
+    </button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
